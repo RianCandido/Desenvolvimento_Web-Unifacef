@@ -77,12 +77,6 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.verde {
-    background-color: #E9F7EF;
-    color: #2BAE60; font-weight: bold;
-    padding: 10px;
-}
-
 .importante {
     display: flex; /* por padrão, adota-se */
     gap: 20px;
@@ -91,10 +85,8 @@ body {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    border: 3px solid red;
 }
 .caixa-importante {
-    border: 3px solid red;
     flex: 1;
     background-color: #EEF5FF;
     border-left: 5px solid #2a5298;
@@ -102,4 +94,18 @@ body {
     padding: 15px;
     justify-content: center;
     width: 100%;
+}
+
+.recompensas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recompensas li {
+    background: #E9F7EF;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #27ae60;
+    font-weight: bold;
 }
