@@ -94,6 +94,7 @@ body {
     padding: 15px;
     justify-content: center;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .recompensas ul {
@@ -108,4 +109,42 @@ body {
     border-radius: 5px;
     color: #27ae60;
     font-weight: bold;
+}
+
+/* introducao.html abaixo */
+
+.missao p {
+    line-height: 1.6; /* altura da linha - melhora a leitura de textos longos  */
+    margin-bottom: 20px;
+    text-align: justify; /* aloinhamento à esquerda e à direita */
+}
+
+.valores ul {
+    list-style: none;
+    padding: 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* junta as bordas adjacentes, ficando uma só */
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2a5298;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+.amarelo {
+    width: 25px; height: 25px; background: yellow;
+}
+
+.cinza {
+    width: 25px; height: 25px; background: gray;
 }
