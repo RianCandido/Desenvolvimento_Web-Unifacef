@@ -145,5 +145,12 @@ th {
 }
 
 .kit-alimentacao {
+    flex: 1;
     list-style: none;
+    background-color: #FFF8E1;
+    border: 2px solid yellow;
+    border-style: dashed;
+    padding: 30px;
+    border-radius: 5%;
+    color: #8C6C10;
 }
