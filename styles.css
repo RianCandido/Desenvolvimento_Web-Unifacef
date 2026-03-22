@@ -151,8 +151,12 @@ th {
     border: 2px solid yellow;
     border-style: dashed;
     padding: 30px;
-    border-radius: 5%;
+    border-radius: 2%;
     color: #8C6C10;
+}
+
+.kit-alimentacao li {
+    margin-bottom: 10px;
 }
 
 .segundaprova {
@@ -166,4 +170,5 @@ th {
 
 .bordaamarela {
     border-left: 5px solid #FFD700;
+    background-color: #FFFDF0;
 }
