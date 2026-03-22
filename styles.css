@@ -143,3 +143,7 @@ th {
 .cinza {
     width: 25px; height: 25px; background: gray;
 }
+
+.kit-alimentacao {
+    list-style: none;
+}
