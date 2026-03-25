@@ -136,6 +136,10 @@ th {
     font-size: 0.85rem;
 }
 
+tr:hover {
+    background-color: #fffce6;
+}
+
 .amarelo {
     width: 25px; height: 25px; background: yellow;
 }
@@ -173,13 +177,18 @@ th {
     background-color: #FFFDF0;
 }
 
-.rodape {
+footer {
     background-color: #1E3C72;
     border-top: 4px solid yellow;
     color: white;
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 50px;
+    font-size: 0.85rem;
     margin: 0;
     padding: 20px 0;
+}
+
+footer p {
+    margin: 8px 0;
+    opacity: 0.9;
 }
