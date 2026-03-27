@@ -192,3 +192,41 @@ footer p {
     margin: 8px 0;
     opacity: 0.9;
 }
+
+.timeline {
+    border-left: 3px solid #2a5298;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.evento {
+    border: 2px solid white; /* deixei a borda para a bolinha ficar reta na linha */
+    margin-bottom: 25px;
+    position: relative; /* dá o poder de flutuar na página, sem alterar a posição de outros elementos */
+}
+
+/* Cria um pseudoelemento no CSS - serve oara inserir conteúdo decorativo ou inferior logo no início de um elemento
+sem que altere HTML - elemento fantasma */
+.evento::before {
+    content: ''; /* sem texto */
+    width: 12px; /* largura da bolinha */
+    height: 12px; /* altura da bolinha */
+    background: #ff4b2b; /* fundo da bolinha */
+    border-radius: 50%; /* cria a bolinha */
+    position: absolute; /* cria a bolinha na posição atual */
+    left: -29px; /* vai para a esquerda */
+    top: 5px; /* abaixa 5px */
+}
+
+.grid-locais {
+    display: flex; /* display flex, tenta ocupar a largura inteira, coloca um ao lado do outro */
+    gap: 20px;
+}
+
+.local {
+    flex: 1; /* faz ocupar toda a área */
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
