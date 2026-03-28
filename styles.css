@@ -90,6 +90,7 @@ section {
     border-left: 5px solid #2a5298;
     border-radius: 8px;
     margin-bottom: 10px;
+    list-style: none;
 }
 
 .recompensas ul {
@@ -117,26 +118,26 @@ section {
     padding: 0px;
 }
 
-table {
+.tabela-pontuacao {
     width: 100%; 
     border-collapse: collapse; /* junto as bordas adjacentes, ficando uma só */
     margin-top: 20px;
     background-color: white;
 }
 
-th, td {
+.tabela-pontuacao th, td {
     padding: 15px; text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
-th {
+.tabela-pontuacao th {
     background-color: #2a5298;
     color: white;
     text-transform: uppercase;
     font-size: 0.85rem;
 }
 
-tr:hover {
+.tabela-pontuacao tr:hover {
     background-color: #fffce6;
 }
 
@@ -257,4 +258,76 @@ sem que altere HTML - elemento fantasma */
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #dee2e6;
+}
+
+.estrutura p {
+    line-height: 1.6; /* altura da linha - melhora a leitura de textos longos */
+    margin-bottom: 20px;
+    text-align: justify; /* alinhamento à esquerda e à direita */
+}
+
+.etapas {
+    border-left: 5px solid #1E3C72;
+    background-color: #cbdcf7;
+}
+
+.caixa-etapas {
+    flex: 1;
+    background: #e3ecfa;
+    padding: 15px;
+    border-left: 5px solid #2a5298;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.etapas-caixona {
+    display: flex;
+    gap: 20px;
+}
+
+.resumo-provas {
+    width: 100%; 
+    border-collapse: collapse; /* junto as bordas adjacentes, ficando uma só */
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.resumo-provas th, td {
+    padding: 8px 15px; 
+    text-align: left;
+}
+
+.resumo-provas td {
+    color: #8C6C10;
+    border-bottom: none;
+    padding: 3px 15px;
+
+}
+
+.resumo-provas th {
+    background-color: #2a5298;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.honraaomerito {
+    border-left: 5px solid #FFD700;
+    background-color: #fffbe3;
+}
+
+.honraaomerito ul {
+    align-items: left;
+    justify-content: left;
+}
+
+.caixa-merito {
+    flex: 1;
+    background: #eef5ff;
+    padding: 15px;
+    border-left: 5px solid #2a5298;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    list-style: none;
+    margin-left: -40px;
 }
