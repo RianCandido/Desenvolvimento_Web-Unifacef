@@ -148,6 +148,34 @@ tr:hover {
     width: 25px; height: 25px; background: gray;
 }
 
+.laranja {
+    width: 25px; height: 25px; background: orange;
+}
+
+.bordo {
+    width: 25px; height: 25px; background: darkred;
+}
+
+.preto {
+    width: 25px; height: 25px; background: black;
+}
+
+.rosa {
+    width: 25px; height: 25px; background: hotpink;
+}
+
+.roxo {
+    width: 25px; height: 25px; background: purple;
+}
+
+.verde {
+    width: 25px; height: 25px; background: greenyellow;
+}
+
+.vermelho {
+    width: 25px; height: 25px; background: red;
+}
+
 .kit-alimentacao {
     flex: 1;
     list-style: none;
