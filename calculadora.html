@@ -59,15 +59,12 @@
         </footer>
         <script>
             function calcular(){
-                // recupera a quantidade de arroz
-                let qtdeArroz = Number(document.getElementById("qtdeArroz").value)
+                let qtdeArroz = Number(document.getElementById("qtdeArroz").value) // recupera a quantidade de arroz
                 let qtdeFeijao = Number(document.getElementById("qtdeFeijao").value)
                 let qtdeOleo = Number(document.getElementById("qtdeOleo").value)
                 let qtdeMacarrao = Number(document.getElementById("qtdeMacarrao").value)
-                // calcula a pontuação total ao usuário
-                let pontos = (qtdeArroz * 10) + (qtdeFeijao * 8) + (qtdeOleo * 4) + (qtdeMacarrao * 2)
-                // mostramos a pontuação total ao usuário
-                document.getElementById("result").innerText = "Pontuação: " + pontos
+                let pontos = (qtdeArroz * 10) + (qtdeFeijao * 8) + (qtdeOleo * 4) + (qtdeMacarrao * 2) // calcula a pontuação total ao usuário
+                document.getElementById("result").innerText = "Pontuação: " + pontos // mostramos a pontuação total ao usuário
             }
         </script>
     </body>
