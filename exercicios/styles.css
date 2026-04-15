@@ -1,0 +1,375 @@
+body {
+    margin: 0; font-family: 'Segoe UI', sans-serif;
+    background-color: #F4F7F6; color: #333;
+}
+
+.menu-principal {
+    background-color: #1E3C72; padding: 15px 0;
+    position: sticky; top: 0; z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.menu-container {
+    max-width: 1000px; margin: 0 auto; display: flex;
+    justify-content: space-between; align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    color: white; text-decoration: none; font-weight: bold;
+    font-size: 1.2rem;  text-transform: uppercase;
+}
+
+.lista {
+    list-style: none; display: flex; gap: 20px;
+    margin: 0; padding: 0;
+}
+
+.lista a {
+    color: #cbdcf7; text-decoration: none; font-size: 0.9rem; 
+    font-weight: 500; transition: color 0.3s;
+}
+
+.lista a:hover {
+    color: #fff;
+}
+
+.cabecalho {
+   
+    background-color: #3E5C92;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cabecalho-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+} 
+
+.cabecalho-container h2 {
+    font-weight: 300;
+    font-style: italic;
+    color: #ffd700;
+}
+
+img {
+    width: 200px;
+    border-radius: 5%;
+}
+
+.principal {
+    
+    max-width: 900px;
+    margin: -40px auto 40px;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.3)
+}
+
+.importante {
+
+    display: flex; /* por padrão, adota-se a horizontal (row)*/
+    gap: 20px;
+}
+
+.caixa-importante {
+    flex: 1;
+    background: #eef5ff;
+    padding: 15px;
+    border-left: 5px solid #2a5298;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.recompensas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recompensas li {
+    background: #e9f7ef;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.missao p {
+    line-height: 1.6; /* altura da linha - melhora a leitura de textos longos */
+    margin-bottom: 20px;
+    text-align: justify; /* alinhamento à esquerda e à direita */
+}
+
+.valores ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.tabela-pontuacao {
+    width: 100%; 
+    border-collapse: collapse; /* junto as bordas adjacentes, ficando uma só */
+    margin-top: 20px;
+    background-color: white;
+}
+
+.tabela-pontuacao th, td {
+    padding: 15px; text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-pontuacao th {
+    background-color: #2a5298;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.tabela-pontuacao tr:hover {
+    background-color: #fffce6;
+}
+
+.amarelo {
+    width: 25px; height: 25px; background: yellow;
+}
+
+.cinza {
+    width: 25px; height: 25px; background: gray;
+}
+
+.laranja {
+    width: 25px; height: 25px; background: orange;
+}
+
+.bordo {
+    width: 25px; height: 25px; background: darkred;
+}
+
+.preto {
+    width: 25px; height: 25px; background: black;
+}
+
+.rosa {
+    width: 25px; height: 25px; background: hotpink;
+}
+
+.roxo {
+    width: 25px; height: 25px; background: purple;
+}
+
+.verde {
+    width: 25px; height: 25px; background: greenyellow;
+}
+
+.vermelho {
+    width: 25px; height: 25px; background: red;
+}
+
+.kit-alimentacao {
+    flex: 1;
+    list-style: none;
+    background-color: #FFF8E1;
+    border: 2px solid yellow;
+    border-style: dashed;
+    padding: 30px;
+    border-radius: 2%;
+    color: #8C6C10;
+}
+
+.kit-alimentacao li {
+    margin-bottom: 10px;
+}
+
+.segundaprova {
+    border-left: 5px solid #FF4B2B;
+    background-color: #FFF5F5;
+}
+
+.fonteamarela {
+    color: #8C6C10;
+    list-style: none;
+}
+
+.bordaamarela {
+    border-left: 5px solid #FFD700;
+    background-color: #FFFDF0;
+}
+
+footer {
+    background-color: #1E3C72;
+    border-top: 4px solid yellow;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 8px 0;
+    opacity: 0.9;
+}
+
+.timeline {
+    border-left: 3px solid #2a5298;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.evento {
+    border: 2px solid white; /* deixei a borda para a bolinha ficar reta na linha */
+    margin-bottom: 25px;
+    position: relative; /* dá o poder de flutuar na página, sem alterar a posição de outros elementos */
+}
+
+/* Cria um pseudoelemento no CSS - serve oara inserir conteúdo decorativo ou inferior logo no início de um elemento
+sem que altere HTML - elemento fantasma */
+.evento::before {
+    content: ''; /* sem texto */
+    width: 12px; /* largura da bolinha */
+    height: 12px; /* altura da bolinha */
+    background: #ff4b2b; /* fundo da bolinha */
+    border-radius: 50%; /* cria a bolinha */
+    position: absolute; /* cria a bolinha na posição atual */
+    left: -29px; /* vai para a esquerda */
+    top: 5px; /* abaixa 5px */
+}
+
+.grid-locais {
+    display: flex; /* display flex, tenta ocupar a largura inteira, coloca um ao lado do outro */
+    gap: 20px;
+}
+
+.local {
+    flex: 1; /* faz ocupar toda a área */
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.estrutura p {
+    line-height: 1.6; /* altura da linha - melhora a leitura de textos longos */
+    margin-bottom: 20px;
+    text-align: justify; /* alinhamento à esquerda e à direita */
+}
+
+.etapas {
+    border-left: 5px solid #1E3C72;
+    background-color: #cbdcf7;
+}
+
+.caixa-etapas {
+    flex: 1;
+    background: #e3ecfa;
+    padding: 15px;
+    border-left: 5px solid #2a5298;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.etapas-caixona {
+    display: flex;
+    gap: 20px;
+}
+
+.resumo-provas {
+    width: 100%; 
+    border-collapse: collapse; /* junto as bordas adjacentes, ficando uma só */
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.resumo-provas th, td {
+    padding: 8px 15px; 
+    text-align: left;
+}
+
+.resumo-provas td {
+    color: #8C6C10;
+    border-bottom: none;
+    padding: 3px 15px;
+
+}
+
+.resumo-provas th {
+    background-color: #2a5298;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.honraaomerito {
+    border-left: 5px solid #FFD700;
+    background-color: #fffbe3;
+}
+
+.honraaomerito ul {
+    align-items: left;
+    justify-content: left;
+}
+
+.caixa-merito {
+    flex: 1;
+    background: #eef5ff;
+    padding: 15px;
+    border-left: 5px solid #2a5298;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    list-style: none;
+    margin-left: -40px;
+}
+
+.lista-homenagem {
+    margin-left: -30px;
+    list-style: none;
+    color: #8C6C10;
+}
+
+.lista-mascote li {
+    margin-left: -40px;
+    margin-bottom: 5px;
+    list-style: none;
+    color: #8C6C10;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100px;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef5ff;
+    border-left: 5px solid #1e3c72;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
