@@ -28,3 +28,18 @@ function credito(){
     }
     // operador || significa OU
 }
+function luta(){
+    // obter dados de peso e idade
+    let peso = Number(document.getElementById("peso").value)
+    let idadeLuta = Number(document.getElementById("idadeLuta").value)
+    // verificar categoria
+    if (idadeLuta < 18) [
+        document.getElementById("resultadoLuta").innerText = "Categoria Juvenil"
+    ]
+    else if (peso < 80) {
+        document.getElementById("resultadoLuta").innerText = "Categoria Adulto - Subcategoria Peso Galo"
+    }
+    else {
+        document.getElementById("resultadoLuta").innerText = "Categoria Adulto - Subcategoria Peso Pesado"
+    }
+}
