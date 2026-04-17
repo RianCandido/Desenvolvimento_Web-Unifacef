@@ -15,3 +15,16 @@ function febre(){
         DocumentTimeline.getElementById("resultadoFebril".innerText) = "Temperatura normal"
     }
 }
+function credito(){
+    // obter os dados de renda e idade
+    let renda = Number(document.getElementById("renda").value)
+    let idade = Number(document.getElementById("idade").value)
+    // verificar se pode fazer o impréstido
+    if (renda > 2000 && idade > 18) { // operador && significa E
+        document.getElementById("resultadoCredito").innerText = "Crédito aprovado"
+    }
+    else {
+        document.getElementById("resultadoCredito").innerText = "Crédito não foi aprovado"
+    }
+    // operador || significa OU
+}
